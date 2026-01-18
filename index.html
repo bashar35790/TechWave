@@ -4,25 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>TechWave</title>
   </head>
-  <body>
+  <body class="inter-font border-0 m-0 p-0 box-border">
     <header>
-        <nav class="bg-[#1A0B2E] py-4">
-            <div class="container mx-auto flex justify-between items-center">
-                <img src="./assets/TechWave.png" alt="logo" class="w-52 h-8" />
-                <ul class="flex space-x-4 p-4 bg-gray-800 text-white">
-                    <li><a href="#" class="hover:underline">Home</a></li>
-                    <li><a href="#" class="hover:underline">About</a></li>
-                    <li><a href="#" class="hover:underline">Services</a></li>
-                    <li><a href="#" class="hover:underline">Contact</a></li>
-                </ul>
-                <button>Subscribe <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-        </nav>
+      <!-- Navigation Bar Section  -->
+      <nav
+        class="bg-[#1A0B2E] py-4 border-b-2 border-b-[#412567] fixed w-full top-0 z-50"
+      >
+        <div class="container mx-auto flex justify-between items-center">
+          <img
+            src="./assets/TechWave.png"
+            alt="logo"
+            class="w-52 h-8 cursor-pointer"
+          />
+          <ul class="flex space-x-4 p-4 text-white">
+            <li><a href="#" class="hover:underline">About</a></li>
+            <li><a href="#" class="hover:underline">Episodes</a></li>
+            <li><a href="#" class="hover:underline">Host</a></li>
+          </ul>
+          <button
+            class="text-white bg-[linear-gradient(105deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] py-3 px-5 rounded-3xl cursor-pointer"
+          >
+            Subscribe <i class="fa-solid fa-arrow-right text-white"></i>
+          </button>
+        </div>
+      </nav>
+      <!-- End of Navigation Bar Section  -->
+
+      <!-- Hero Banner Section  -->
+
+      <div
+        class="bg-[url('./assets/hero-bg.png')] bg-cover bg-center bg-no-repeat h-dvh w-full"
+      >
+        <div class="container mx-auto pt-32 text-center text-white">
+          <h1 class="text-4xl md:text-6xl font-bold mb-6">Ride the TechWave</h1>
+          <p class="text-lg md:text-2xl mb-8">
+            Your weekly dose of tech insights, trends, and innovations.
+          </p>
+        </div>
+      </div>
+
+      <!-- End of Hero Banner Section  -->
     </header>
-
-
   </body>
 </html>
