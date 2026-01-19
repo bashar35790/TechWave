@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,16 +25,21 @@
             alt="logo"
             class="w-52 h-8 cursor-pointer"
           />
-          <ul class="flex space-x-4 p-4 text-white">
+          <ul class="flex space-x-4 p-4 text-white max-md:hidden">
             <li><a href="#" class="hover:underline">About</a></li>
             <li><a href="#" class="hover:underline">Episodes</a></li>
             <li><a href="#" class="hover:underline">Host</a></li>
           </ul>
           <button
-            class="text-white bg-[linear-gradient(105deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] py-3 px-5 rounded-3xl cursor-pointer"
+            class="text-white bg-[linear-gradient(105deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] py-3 px-5 rounded-3xl cursor-pointer max-md:hidden"
           >
             Subscribe <i class="fa-solid fa-arrow-right text-white"></i>
           </button>
+          <img
+            src="./assets/hamburger-menu.png"
+            alt="menu"
+            class="w-5 h-5 lg:hidden cursor-pointer"
+          />
         </div>
       </nav>
       <!-- End of Navigation Bar Section  -->
@@ -42,17 +47,43 @@
       <!-- Hero Banner Section  -->
 
       <div
-        class="bg-[url('./assets/hero-bg.png')] bg-cover bg-center bg-no-repeat h-dvh w-full"
+        class="min-h-dvh w-full bg-[url('./assets/hero-bg-mobile.png')] bg-cover bg-center bg-no-repeat md:bg-[url('./assets/hero-bg.png')] md:bg-center"
       >
         <div class="container mx-auto pt-32 text-center text-white">
-          <h1 class="text-4xl md:text-6xl font-bold mb-6">Ride the TechWave</h1>
-          <p class="text-lg md:text-2xl mb-8">
-            Your weekly dose of tech insights, trends, and innovations.
-          </p>
+          <img
+            src="./assets/microphoneWithBg.png"
+            alt="microphone"
+            class="w-[350px] h-[350px] block mx-auto max-sm:w-[200px] max-md:h-[200px]"
+          />
+
+          <div class="flex flex-col gap-6 mt-10 items-center">
+            <h1 class="text-6xl font-extrabold max-md:text-5xl ">TechWave</h1>
+            <p class="font-normal text-[16px] w-full">
+              Your daily dose of tech insights, productivity hacks, and personal
+              growth
+            </p>
+            <div class="flex gap-2 justify-center">
+              <button
+                class="text-white bg-[linear-gradient(20deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] py-3 px-5 rounded-3xl cursor-pointer"
+              >
+                <i class="fa-brands fa-spotify"></i> Listen on Spotify
+              </button>
+              <button
+                class="text-[#00FF88] font-semibold text-[16px] py-3 px-5 rounded-3xl cursor-pointer border-2 border-[#00FF88]"
+              >
+                <i
+                  class="fa-regular fa-envelope text-[#00FF88] w-[20] h-[20]"
+                ></i>
+                Subscribe
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- End of Hero Banner Section  -->
     </header>
+
+    
   </body>
 </html>
