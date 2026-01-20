@@ -247,28 +247,30 @@
         >
           <h2 class="font-bold text-5xl max-md:text-3xl">Featured Episodes</h2>
           <!-- video start  -->
-          <div class="flex gap-8 max-md:flex-col">
+          <!-- <div class="flex gap-8 max-md:flex-col items-stretch">
             <div
-              class="bg-[#351165] flex flex-col items-start justify-center max-w-[380px] max-md:max-w-full rounded-3xl"
+              class="bg-[#351165] flex flex-col items-start justify-center max-w-[380px] max-md:max-w-full h-full rounded-2xl"
             >
-              <iframe
-                width="100%"
-                height="315"
-                class="rounded-t-2xl"
-                src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
-              >
-              </iframe>
-              <div class="p-6 bg-[#250D44] flex flex-col gap-2.5">
+              <div class="w-full aspect-video">
+                <iframe
+                  class="w-full h-full rounded-t-2xl"
+                  src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+
+              <div class="p-6 bg-[#250D44] flex flex-col gap-2.5 flex-1">
                 <h3 class="font-bold text-2xl text-start">
                   Premium Audio Quality
                 </h3>
-                <p class="text-left">
+                <p class="text-left flex-1">
                   Experience crystal-clear sound with professional-grade
                   recording equipment and expert audio engineering. Every
                   episode is mastered for optimal listening across all devices
                   and platforms.
                 </p>
-                <div class="text-start">
+                <div class="text-start mt-auto">
                   <i class="fa-solid fa-clock text-[#00FF88]"></i>
                   <time class="text-[#00FF88]">42 min</time>
                 </div>
@@ -276,62 +278,160 @@
             </div>
 
             <div
-              class="bg-[#351165] flex flex-col items-start justify-center max-w-[380px] max-md:max-w-full rounded-3xl"
+              class="bg-[#351165] flex flex-col items-start justify-center max-w-[380px] max-md:max-w-full rounded-2xl h-full"
             >
-              <iframe
-                width="100%"
-                height="315"
-                class="rounded-t-2xl"
-                src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
-              >
-              </iframe>
-              <div class="p-6 bg-[#250D44] flex flex-col gap-2.5">
+              <div class="w-full aspect-video">
+                <iframe
+                  class="w-full h-full rounded-t-2xl"
+                  src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+              <div class="p-6 bg-[#250D44] flex flex-col gap-2.5 flex-1">
                 <h3 class="font-bold text-2xl text-start">
-                  Premium Audio Quality
+                  Building Better Habits for Remote Work
                 </h3>
-                <p class="text-left">
-                  Experience crystal-clear sound with professional-grade
-                  recording equipment and expert audio engineering. Every
-                  episode is mastered for optimal listening across all devices
-                  and platforms.
+                <p class="text-left flex-1">
+                  Practical strategies for staying productive and maintaining
+                  work-life balance in a remote environment.
                 </p>
-                <div class="text-start">
+                <div class="text-start mt-auto">
                   <i class="fa-solid fa-clock text-[#00FF88]"></i>
-                  <time class="text-[#00FF88]">42 min</time>
+                  <time class="text-[#00FF88]">35 min</time>
                 </div>
               </div>
             </div>
 
             <div
-              class="bg-[#351165] flex flex-col items-start justify-center max-w-[380px] max-md:max-w-full rounded-3xl"
+              class="bg-[#351165] flex flex-col items-start justify-center max-w-[380px] max-md:max-w-full rounded-2xl h-full"
             >
-              <iframe
-                width="100%"
-                height="315"
-                class="rounded-t-2xl"
-                src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
-              >
-              </iframe>
-              <div class="p-6 bg-[#250D44] flex flex-col gap-2.5">
+              <div class="w-full aspect-video">
+                <iframe
+                  class="w-full h-full rounded-t-2xl"
+                  src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+              <div class="p-6 bg-[#250D44] flex flex-col gap-2.5 flex-1">
                 <h3 class="font-bold text-2xl text-start">
+                  Career Growth in Tech: A Roadmap
+                </h3>
+                <p class="text-left flex-1">
+                  Expert advice on navigating your tech career from junior
+                  developer to senior leadership roles.
+                </p>
+                <div class="text-start mt-auto">
+                  <i class="fa-solid fa-clock text-[#00FF88]"></i>
+                  <time class="text-[#00FF88]">51 min</time>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-[1200px]"
+          >
+            <!-- Card -->
+            <div class="bg-[#351165] rounded-2xl overflow-hidden flex flex-col">
+              <!-- Video -->
+              <div class="aspect-video w-full">
+                <iframe
+                  class="w-full h-full"
+                  src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <!-- Content -->
+              <div
+                class="p-5 sm:p-6 bg-[#250D44] flex flex-col gap-3 flex-1 text-left"
+              >
+                <h3 class="font-bold text-xl sm:text-2xl">
                   Premium Audio Quality
                 </h3>
-                <p class="text-left">
+
+                <p class="text-sm sm:text-base flex-1">
                   Experience crystal-clear sound with professional-grade
                   recording equipment and expert audio engineering. Every
                   episode is mastered for optimal listening across all devices
                   and platforms.
                 </p>
-                <div class="text-start">
-                  <i class="fa-solid fa-clock text-[#00FF88]"></i>
-                  <time class="text-[#00FF88]">42 min</time>
+
+                <div class="flex items-center gap-2 mt-auto text-[#00FF88]">
+                  <i class="fa-solid fa-clock"></i>
+                  <time>42 min</time>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#351165] rounded-2xl overflow-hidden flex flex-col">
+              <!-- Video -->
+              <div class="aspect-video w-full">
+                <iframe
+                  class="w-full h-full"
+                  src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <!-- Content -->
+              <div
+                class="p-5 sm:p-6 bg-[#250D44] flex flex-col gap-3 flex-1 text-left"
+              >
+                <h3 class="font-bold text-xl sm:text-2xl">
+                  Premium Audio Quality
+                </h3>
+
+                <p class="text-sm sm:text-base flex-1">
+                  Experience crystal-clear sound with professional-grade
+                  recording equipment and expert audio engineering. Every
+                  episode is mastered for optimal listening across all devices
+                  and platforms.
+                </p>
+
+                <div class="flex items-center gap-2 mt-auto text-[#00FF88]">
+                  <i class="fa-solid fa-clock"></i>
+                  <time>42 min</time>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#351165] rounded-2xl overflow-hidden flex flex-col">
+              <!-- Video -->
+              <div class="aspect-video w-full">
+                <iframe
+                  class="w-full h-full"
+                  src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <!-- Content -->
+              <div
+                class="p-5 sm:p-6 bg-[#250D44] flex flex-col gap-3 flex-1 text-left"
+              >
+                <h3 class="font-bold text-xl sm:text-2xl">
+                  Premium Audio Quality
+                </h3>
+
+                <p class="text-sm sm:text-base flex-1">
+                  Experience crystal-clear sound with professional-grade
+                  recording equipment and expert audio engineering. Every
+                  episode is mastered for optimal listening across all devices
+                  and platforms.
+                </p>
+
+                <div class="flex items-center gap-2 mt-auto text-[#00FF88]">
+                  <i class="fa-solid fa-clock"></i>
+                  <time>42 min</time>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- video end  -->
         </div>
+        <!-- video end  -->
 
         <!-- about card  -->
         <div
